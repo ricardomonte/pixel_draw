@@ -22,7 +22,7 @@ const Pixel = ({color}) => {
     setCanChangeColor(true)
   }
   return (
-    <div className={Style.pixel} style={{backgroundColor: pixelColor}} onMouseDown={applyColorHandler} onMouseEnter={onChangeColorHandler} onMouseLeave={resetHandler}></div>
+    <div className={Style.pixel} style={{backgroundColor: pixelColor}} onClick={applyColorHandler} onMouseEnter={onChangeColorHandler} onMouseLeave={resetHandler}></div>
   )
 }
 
